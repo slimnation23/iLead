@@ -1281,7 +1281,10 @@ body {
   outline: none;
   cursor: pointer;
   transition: .3s;
-  width: 350px;
+}
+
+.btn-header {
+  width: 330px;
 }
 
 .btn-outline {

@@ -1,0 +1,182 @@
+@font-face {
+  font-family: 'Futura PT Cond Book';
+  src: url('../../fonts/FuturaPT-Book.eot');
+  src: local('Futura PT Cond Book'), local('FuturaPTCond-Book'),
+      url('../../fonts/FuturaPT-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura PT Cond';
+  src: url('../../fonts/FuturaPT-Bold.eot');
+  src: local('Futura PT Cond Bold'), local('FuturaPTCond-Bold'),
+      url('../../fonts/FuturaPT-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../../fonts/FuturaPT-Bold.woff') format('woff'),
+      url('../../fonts/FuturaPT-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.bold90 {
+  font-family: 'Futura PT Cond';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 9rem;
+  line-height: 110%;
+}
+.bold60 {
+  font-family: 'Futura PT Cond';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 6rem;
+  line-height: 110%;
+}
+.bold55 {
+  font-family: 'Futura PT Cond';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5.5rem;
+  line-height: 110%;
+}
+.bold46 {
+  font-family: 'Futura PT Cond';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4.5rem;
+  line-height: 110%;
+}
+.bold30 {
+  font-family: 'Futura PT Cond';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 110%;
+}
+.bold24 {
+  font-family: 'Futura PT Cond';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 110%;
+}
+.bold20 {
+  font-family: 'Futura PT Cond';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 110%;
+}
+.bold20-120 {
+  font-family: 'Futura PT Cond';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 120%;
+}
+.bold20-140 {
+  font-family: 'Futura PT Cond';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 140%;
+}
+.bold16 {
+  font-family: 'Futura PT Cond';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 110%;
+}
+.bold16-10 {
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 110%;
+  letter-spacing: 0.1em;
+}
+.bold16-40 {
+  font-family: 'Futura PT Cond';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 140%;
+}
+.bold150 {
+  font-family: 'Futura PT Cond';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15rem;
+  line-height: 110%;
+}
+.book210 {
+  font-family: 'Futura PT Cond';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21rem;
+  line-height: 110%;
+}
+.book24 {
+  font-family: 'Futura PT Cond Book';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 140%;
+}
+.book24-10 {
+  font-family: 'Futura PT Cond Book';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 110%;
+}
+.book20 {
+  font-family: 'Futura PT Cond Book';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 2rem;
+  line-height: 140%;
+}
+.book20-120 {
+  font-family: 'Futura PT Cond Book';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 120%;
+}
+.book16 {
+  font-family: 'Futura PT Cond Book';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 140%;
+}
+.book16-10 {
+  font-family: 'Futura PT Cond Book';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 110%;
+}
+.book14 {
+  font-family: 'Futura PT Cond Book';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1.4rem;
+  line-height: 140%;
+}
+.book14-120 {
+  font-family: 'Futura PT Cond Book';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 120%;
+}
+.book32 {
+  font-family: 'Futura PT Cond Book';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 3.2rem;
+  line-height: 140%;
+}

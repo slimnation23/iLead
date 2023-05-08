@@ -1,0 +1,1017 @@
+$mobile: 768px
+
+*,
+*:after,
+*:before
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html
+  font-size: 10px
+
+body
+  background-color: var(--Dark)
+  width: 100vw
+  overflow-x: hidden
+
+.container
+  max-width: 120rem
+  width: 100%
+  margin: 0 auto
+  position: relative
+  @media ( max-width: $mobile )
+    padding-left: 2.1rem
+    padding-right: 2.1rem
+
+.header
+  background: var(--DarkGrey)
+  min-height: 8rem
+  display: flex
+  align-items: center
+  z-index: 2
+  position: relative
+
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__brand
+    display: flex
+    align-items: center
+    &-logo
+      width: 11.7rem
+      height: 5.1rem
+
+    &-sleng
+      color: var(--White)
+      margin-left: 2.4rem
+      @media ( max-width: $mobile )
+        display: none
+
+    &-links
+      margin-left: 6rem
+      display: flex
+      align-items: center
+      gap: 1.4rem
+      @media ( max-width: $mobile )
+        display: none
+
+  &__contacts
+    display: flex
+    align-items: center
+    &-tel
+      color: var(--White)
+      margin-right: 2.7rem
+      @media ( max-width: $mobile )
+        display: none
+
+// sections
+.welcome
+  min-height: 100vh
+  background-image: url(../assets/bg.png)
+  background-repeat: no-repeat
+  background-size: cover
+  background-position-x: -.2rem
+  display: flex
+  align-items: center
+  overflow: hidden
+
+  &__img
+    margin-left: -17rem
+    @media ( max-width: $mobile )
+      margin-left: 0
+      width: 22.5rem
+      height: 27.7rem
+      margin: 0 auto
+      margin-top: 1.4rem
+
+  &__info
+    margin-top: 15rem
+    margin-left: 12.3rem
+    @media ( max-width: $mobile )
+      margin-left: unset
+      text-align: center
+      margin-top: 3.5rem
+    &-top
+      position: relative
+      h1
+        position: absolute
+        top: -15.5rem
+        left: 0
+        z-index: 1
+        color: var(--White)
+        opacity: 0.06
+        user-select: none
+        @media ( max-width: $mobile )
+          font-size: 10rem
+          left: 50%
+          transform: translateX(-50%)
+          top: -6.5rem
+      p
+        color: var(--White)
+        position: relative
+        z-index: 2
+        @media ( max-width: $mobile )
+          font-size: 3rem
+        b
+          background: var(--gr)
+          -webkit-background-clip: text
+          -webkit-text-fill-color: transparent
+    &-slag
+      display: block
+      color: var(--White)
+      margin-top: 1.9rem
+      margin-bottom: 5.3rem
+      @media ( max-width: $mobile )
+        margin-top: 1.1rem
+        margin-bottom: 2.1rem
+
+  .container
+    display: flex
+    justify-content: center
+    @media ( max-width: $mobile )
+      flex-direction: column
+
+.achievements
+  background: var(--Dark2)
+  position: relative
+  overflow: hidden
+
+  &__title
+    position: absolute
+    top: 5rem
+    left: 50%
+    transform: translateX(-50%)
+    color: var(--White)
+    opacity: 0.06
+    user-select: none
+    @media ( max-width: $mobile )
+      font-size: 4.6rem!important
+      top: 1.6rem
+
+  &__blocks
+    display: grid
+    grid-template-columns: repeat(auto-fit,minmax(16.2rem,28.2rem))
+    grid-auto-rows: minmax(16.3rem,auto)
+    grid-gap: 2.4rem
+    justify-content: center
+    padding-top: 18.1rem
+    padding-bottom: 8.8rem
+    position: relative
+    @media ( max-width: $mobile )
+      padding-top: 5.7rem
+      padding-bottom: 3.8rem
+      grid-template-columns: 1fr 1fr
+      grid-auto-rows: auto
+
+    .card
+      padding: 1.9rem 2.4rem 3.1rem 2.9rem
+      border-radius: 1rem
+      @media ( max-width: $mobile )
+        padding: 1.4rem 2rem 2rem 1.1rem
+      &:nth-child(1)
+        background: var(--gr)
+      &:nth-child(2)
+        background: var(--grOrange)
+      &:nth-child(3)
+        background: var(--grGreen)
+      &:nth-child(4)
+        background: var(--grPurper)
+
+      &__number,
+      &__text
+        color: var(--White)
+      &__text
+        margin-top: .6rem
+        @media ( max-width: $mobile )
+          font-size: 1.3rem
+      &__number
+        @media ( max-width: $mobile )
+          font-size: 2.4rem
+
+.jobs
+  padding-top: 16.3rem
+  text-align: center
+  @media ( max-width: $mobile )
+    padding-top: 5.9rem
+
+  .items
+    display: grid
+    grid-template-columns: repeat(auto-fill,minmax(38.4rem,1fr))
+    grid-auto-rows: minmax(54.2rem,auto)
+    grid-gap: 2.4rem
+    margin-top: 7.1rem
+    @media ( max-width: $mobile )
+      margin-top: 4.2rem
+      grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr))
+      grid-auto-rows: minmax(42.6rem,auto)
+      grid-gap: 1.2rem
+
+    .item
+      background: var(--Card)
+      border-radius: 1rem
+      &__body
+        padding: 2.4rem 2.6rem 3.7rem 4rem
+        @media ( max-width: $mobile )
+          padding: 2rem
+      &__img
+        width: 100%
+        height: auto
+      &__numbers
+        display: flex
+        justify-content: space-between
+        &-block
+          text-align: left
+          span
+            display: block
+            color: var(--White)
+            @media ( max-width: $mobile )
+              &:nth-child(1)
+                font-size: 1.4rem
+              &:nth-child(2)
+                font-size: 2.4rem
+
+            &:nth-child(2)
+              b
+                background: var(--gr)
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+      &__info
+        text-align: left
+        margin-top: 2.3rem
+        &-title
+          color: var(--White)
+          margin-bottom: .7rem
+          @media ( max-width: $mobile )
+            font-size: 1.6rem
+        &-description
+          color: var(--White)
+          @media ( max-width: $mobile )
+            font-size: 1.6rem
+      &__footer
+        margin-top: 2.2rem
+        text-align: left
+        @media ( max-width: $mobile )
+          margin-top: 2.8rem
+          button
+            width: 100%
+
+  .getOrder
+    text-align: left
+    margin-top: 10rem
+    margin-bottom: 17.7rem
+    display: grid
+    grid-template-columns: 1fr 1fr
+    justify-content: space-between
+    margin: 0 3rem
+    @media ( max-width: $mobile )
+      display: flex
+      flex-direction: column
+      margin-top: 6.5rem
+      margin-bottom: 8.6rem
+    &__info
+      margin-top: 6rem
+      @media ( max-width: $mobile )
+        text-align: center
+      &-title
+        color: var(--White)
+        margin-bottom: 3.7rem
+        margin-top: 1.8rem
+        @media ( max-width: $mobile )
+          font-size: 3rem
+          text-align: center
+        b
+          background: var(--gr)
+          -webkit-background-clip: text
+          -webkit-text-fill-color: transparent
+      &-list
+        list-style: none
+        margin-bottom: 5.7rem
+        @media ( max-width: $mobile )
+          margin-bottom: 3.8rem
+        li
+          display: flex
+          align-items: center
+          color: var(--White)
+          margin-bottom: 1.7rem
+          @media ( max-width: $mobile )
+            text-align: center
+            justify-content: center
+            margin-bottom: .6rem
+            img
+              display: none
+      @media ( max-width: $mobile )
+        .badage
+          margin: 0 auto
+    &__img
+      width: 100%
+      @media ( max-width: $mobile )
+        order: -1
+        width: 30.3rem
+        height: 30.8rem
+        margin: 0 auto
+
+.task
+  text-align: center
+  padding-top: 6.5rem
+  padding-bottom: 7.9rem
+  background-image: url(../assets/bg2.png)
+  background-repeat: no-repeat
+  background-size: cover
+  @media ( max-width: $mobile )
+    padding-top: 4.2rem
+    padding-bottom: 4.6rem
+    background-image: url(../assets/bg2-blur.png)
+
+  .blocks
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    grid-gap: 2.4rem
+    margin-top: 6.6rem
+    @media ( max-width: $mobile )
+      margin-top: 2.5rem
+      grid-gap: 1.2rem
+
+    .block
+      width: 38.4rem
+      height: 9.1rem
+      color: var(--White)
+      background: var(--grey)
+      border-radius: 2rem
+      display: flex
+      align-items: center
+      justify-content: center
+      padding: 2rem 2.6rem 2.3rem 2.6rem
+      @media ( max-width: $mobile )
+        font-size: 2rem
+
+.video
+  padding-top: 18.7rem
+  padding-bottom: 21.0rem
+  overflow: hidden
+  @media ( max-width: $mobile )
+    padding-top: 8.8rem
+    padding-bottom: 16.5rem
+    overflow: hidden
+  &__title
+    color: var(--White)
+    @media ( max-width: $mobile )
+      font-size: 3rem!important
+    b
+      background: var(--gr)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+  &__img
+    position: absolute
+    right: -20rem
+    top: -13rem
+    @media ( max-width: $mobile )
+      width: 13.8rem
+      height: 13.8rem
+      right: -5rem
+      top: -4rem
+  .items
+    display: grid
+    grid-template-columns: repeat(auto-fill,minmax(38.4rem,1fr))
+    grid-auto-rows: minmax(37.1rem,auto)
+    grid-gap: 2.4rem
+    margin-top: 7.7rem
+    @media ( max-width: $mobile )
+      margin-top: 2.7rem
+      display: inline-flex
+
+    .item
+      border-radius: 1rem
+      background: var(--Card)
+      overflow: hidden
+      &__header
+        min-height: 25.9rem
+        background: var(--Card2)
+        position: relative
+      &__photo
+        opacity: .6
+        object-fit: cover
+        width: 100%
+        height: 25.9rem
+        @media ( max-width: $mobile )
+          width: 29.2rem
+      &__play
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        z-index: 2
+        cursor: pointer
+        background-image: url('../assets/icons/play.svg')
+        background-repeat: no-repeat
+        background-size: 9rem
+        width: 9rem
+        height: 9rem
+        transition: .3s
+        &:hover
+          background-image: url('../assets/icons/playHover.svg')
+      &__info
+        padding: 2.7rem 3.3rem 3.4rem 3.3rem
+        text-align: center
+        color: var(--White)
+        &-position
+          margin-top: .7rem
+  .wrapper
+    @media ( max-width: $mobile )
+      width: 100vw
+      overflow-x: scroll
+      padding-bottom: 3rem
+      &::-webkit-scrollbar
+        height: .3rem
+      &::-webkit-scrollbar-track
+        background-color: var(--grey)
+      &::-webkit-scrollbar-thumb
+        background: var(--grOrange)
+        border-radius: .4rem
+
+.secure
+  text-align: center
+  padding-top: 6.5rem
+  padding-bottom: 8.7rem
+  background-image: url(../assets/bg3.png)
+  background-repeat: no-repeat
+  background-size: cover
+
+  .items
+    display: grid
+    grid-template-columns: repeat(auto-fill,minmax(28.2rem,1fr))
+    grid-auto-rows: minmax(35.5rem,auto)
+    grid-gap: 2.4rem
+    margin-top: 6.5rem
+    @media ( max-width: $mobile )
+      margin-top: 3.4rem
+      grid-auto-rows: auto
+
+    .item
+      background: var(--Dark2)
+      text-align: center
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding: 2.5rem 2.1rem 3.2rem 2.2rem
+      border-radius: 2rem
+      @media ( max-width: $mobile )
+        padding: 2.3rem 2.7rem 2.8rem 2.1rem
+        flex-direction: row
+        align-items: unset
+      &__img
+        width: 12.6rem
+        height: 12.6rem
+        background: var(--gr)
+        border-radius: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        @media ( max-width: $mobile )
+          width: 4.6rem
+          height: 4.6rem
+          margin-right: 2.3rem
+          img
+            transform: scale(.4)
+      &__title
+        color: var(--White)
+        margin-top: 2.6rem
+        @media ( max-width: $mobile )
+          margin-top: 0
+          text-align: left
+      &__description
+        color: var(--White)
+        margin-top: 1.4rem
+        @media ( max-width: $mobile )
+          margin-top: .8rem
+          text-align: left
+
+.team
+  padding-top: 14.1rem
+  padding-bottom: 11.9rem
+  overflow: hidden
+  @media ( max-width: $mobile )
+    padding-top: 4.5rem
+    padding-bottom: 8rem
+  .container
+    display: flex
+    @media ( max-width: $mobile )
+      flex-direction: column
+  &__img
+    margin-left: -20rem
+    @media ( max-width: $mobile )
+      width: 100%
+      height: 22.6rem
+      margin-left: unset
+      margin: 0 auto
+  &__info
+    margin-top: 3rem
+    @media ( max-width: $mobile )
+      margin-top: 2.2rem
+    &-title
+      color: var(--White)
+      @media ( max-width: $mobile )
+        font-size: 3rem!important
+        text-align: center
+      b
+        background: var(--gr)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+    &-description
+      color: var(--White)
+      margin-top: 3.6rem
+      @media ( max-width: $mobile )
+        font-size: 1.6rem!important
+        text-align: center
+
+.help
+  text-align: center
+  background: var(--Dark2)
+  padding-top: 6.9rem
+  padding-bottom: 8.8rem
+  @media ( max-width: $mobile )
+    padding-top: 4.1rem
+    padding-bottom: 4.7rem
+  &__title
+    color: var(--White)
+    @media ( max-width: $mobile )
+      font-size: 3rem!important
+    b
+      background: var(--gr)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+  &__description
+    color: var(--White)
+    margin-top: 2.3rem
+    margin-bottom: 6.3rem
+    display: block
+    @media ( max-width: $mobile )
+      margin-top: 1.6rem
+      margin-bottom: 3.8rem
+      font-size: 1.6rem!important
+
+  form
+    .grid
+      display: grid
+      grid-template-columns: auto 1fr
+      grid-gap: 2.4rem
+      grid-auto-rows: auto
+      margin-top: 6.3rem
+      margin-bottom: 3.3rem
+      .space
+        height: 1.4rem
+      @media ( max-width: $mobile )
+        display: flex
+        flex-direction: column
+        .space
+          height: 1.4rem
+        textarea
+          height: 12.2rem
+
+.footer
+  position: relative
+  height: 100%
+  overflow: hidden
+  // margin-bottom: 7rem
+  &--mobile
+    .footer__content
+      .policy
+        background: rgba(19, 17, 26, .26)
+        padding: 1.8rem 1rem 2.5rem 1rem
+        width: 100%
+        margin-top: 7rem
+        text-align: center
+        a
+          color: var(--White)
+          opacity: .5
+
+    .footer__content > .container
+      flex-direction: column
+    .footer__content > .container > .block
+      margin: 0 auto
+      width: 100%
+      .links
+        justify-content: center
+        margin-top: 5.5rem
+        margin-bottom: 2.7rem
+      .btn
+        width: 100%
+    @media ( min-width: $mobile )
+      display: none
+  &--pc
+    @media ( max-width: $mobile )
+      display: none
+  &__content
+    position: relative
+    z-index: 2
+    background: rgba(19, 17, 26, .96)
+    width: 100%
+    height: 100%
+    padding-top: 7rem
+    .container
+      display: flex
+      justify-content: space-between
+    .block
+      span
+        color: var(--White)
+        display: block
+      .links
+        display: flex
+        margin-top: 2.5rem
+        a
+          margin-right: 1.6rem
+          background: var(--Dark2)
+          width: 4rem
+          height: 4rem
+
+    .Mblock
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin: 0 auto
+      &:nth-child(1)
+        margin-bottom: 8.1rem
+      &__icon
+        width: 17.2rem
+        height: 17.2rem
+        border-radius: 100%
+        background: var(--gr)
+        display: flex
+        justify-content: center
+        align-items: center
+      &__title
+        display: block
+        color: var(--White)
+        margin-top: 1.8rem
+      &__text
+        margin-top: .2rem
+        margin-bottom: 3.6rem
+        color: var(--White)
+    .addres
+      text-align: center
+      span
+        display: block
+      &__title
+        margin-top: 6.1rem
+        color: var(--White)
+      &__text
+        margin-top: 1.1rem
+        color: var(--White)
+  &__policy
+    text-align: center
+    padding: 3rem 0 3rem 0
+    background: rgba(19, 17, 26, .26)
+    margin-top: 7rem
+    a
+      color: var(--White)
+      opacity: .5
+      transition: .3s
+      &:hover
+        opacity: .33
+
+  &__map
+    width: 100%
+    object-fit: cover
+    position: absolute
+    top: 0
+    left: 0
+    &--mobile
+      height: 100%
+
+.check
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  min-height: calc(100vh - 8rem)
+  &__img
+    @media ( max-width: $mobile )
+      width: 15.8rem
+      height: 15.8rem
+  &__title
+    color: var(--White)
+    margin-top: 5.9rem
+    @media ( max-width: $mobile )
+      font-size: 3rem!important
+  &__description
+    color: var(--White)
+    margin-top: .9rem
+    margin-bottom: 4.9rem
+    text-align: center
+    @media ( max-width: $mobile )
+      font-size: 1.6rem!important
+
+.case
+  &__header
+    min-height: 44.5rem
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    color: var(--White)
+    background-repeat: no-repeat
+    background-size: cover
+    &-categorys
+      margin-top: 2.2rem
+  &__content
+    max-width: 120rem
+    width: 100%
+    margin: 0 auto
+    &-block
+      display: flex
+      align-items: center
+      justify-content: space-between
+      gap: 12rem
+      margin-top: 14.8rem
+      &:nth-child(1)
+        margin-top: unset
+      h1
+        color: var(--White)
+        margin-bottom: 2.8rem
+      ul
+        list-style: none
+        color: var(--White)
+        li
+          margin-top: 1.6rem
+  &__screen
+    margin-top: 12.5rem
+    & :nth-child(1)
+      margin-top: 27rem
+    & :nth-last-child(1)
+      margin-bottom: 15.4rem
+    h1
+      text-align: center
+      color: var(--White)
+      margin-bottom: 5.2rem
+
+// special
+.icon-link
+  width: 3.2rem
+  height: 3.2rem
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: var(--LinkIcon)
+  border-radius: 100%
+  transition: .3s
+  &:hover
+    background: var(--iconHover)!important
+  &--gradient
+    background: var(--gr)
+  &--noHover:hover
+    background: var(--gr)!important
+
+.block__title
+  &-small
+    background: var(--gr)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    @media ( max-width: $mobile )
+      font-size: 1.6rem
+  &-h1
+    color: var(--White)
+    margin-top: 1.4rem!important
+    @media ( max-width: $mobile )
+      font-size: 3rem!important
+  &-span
+    color: var(--White)
+    @media ( max-width: $mobile )
+      font-size: 1.6rem!important
+
+.badage
+  padding: .9rem 2.7rem .9rem 2.8rem
+  border-radius: 4rem
+  background: var(--grPurper)
+  width: fit-content
+  color: var(--White)
+
+// btns
+.btn
+  background-color: transparent
+  border: none
+  outline: none
+  cursor: pointer
+  transition: .3s
+
+  &-outline
+    position: relative
+    padding: 1.2rem 2.8rem
+    background: var(--grOrange)
+    border-radius: 12px
+    color: #fff
+    overflow: hidden
+    transition: .3s
+    span
+      position: relative
+      z-index: 12
+    &:before
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: var(--grOrange)
+      content: ''
+      opacity: 1
+      transition: .3s
+    &:after
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: #fff
+      content: ''
+      opacity: 0
+      transition: .5s
+    &:hover
+      transition: .3s
+      span
+        background: var(--grOrange)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+      &:after
+        opacity: 1
+      &:before
+        opacity: 0
+
+  &-fill
+    padding: 1.8rem 3.8rem 1.8rem 3.8rem
+    background: var(--grOrange)
+    border-radius: 1.2rem
+    color: var(--White)
+    box-shadow: 0 .4rem 3.4rem rgba(238, 140, 39, 0.3)
+    &:hover
+      box-shadow: 0 .4rem 3.4rem rgba(238, 140, 39, 0.6)
+
+.input,
+.textarea
+  width: 100%
+  height: 5.4rem
+  border-radius: 1rem
+  padding-left: 2rem
+  border: .1rem solid var(--grey)
+  background: transparent
+  outline: none
+  position: relative
+  color: var(--White)
+  &:focus
+  &::placeholder
+    opacity: .4
+.textarea
+  padding-top: 1.6rem
+  height: 100%
+  resize: none
+
+.selector
+  display: flex
+  position: relative
+  &__drop
+    padding: 1.2rem 1.4rem
+    background: var(--grey)
+    border-radius: 1rem 0 0 1rem
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    user-select: none
+    .arrow
+      margin-left: .9rem
+  &__input
+    background: transparent
+    border: none
+    outline: none
+    border: .1rem solid var(--grey)
+    padding: 1.6rem 2rem
+    border-radius: 0 1rem 1rem 0
+    color: var(--White)
+    width: 100%
+    &::placeholder
+      opacity: .4
+  &__dropdown
+    opacity: 0
+    overflow: hidden
+    //padding: 1.6rem 2.6rem 1.5rem 1.5rem
+    background: var(--grey)
+    border-radius: 1rem
+    position: absolute
+    left: 0
+    top: 6.6rem
+    user-select: none
+    transition: .5s ease-in-out
+    pointer-events: none
+    &.show
+      opacity: 1
+      display: flex
+      flex-direction: column
+      pointer-events: all
+
+    &-item
+      transition: .3s
+      display: flex
+      align-items: center
+      color: var(--White)
+      cursor: pointer
+      margin-bottom: 1.4rem
+      padding: .7rem 1.5rem
+      &:nth-last-child(1)
+        margin-bottom: unset
+      .icon-link
+        margin-right: 1.1rem
+        transform: scale(.9)
+      &:hover
+        background: #3D384F
+
+.modal
+  z-index: 200
+  width: 100vw
+  height: 100vh
+  position: fixed
+  top: 0
+  left: 0
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  opacity: 0
+  pointer-events: none
+  transition: .5s
+  &.show
+    opacity: 1
+    pointer-events: all
+  &__content
+    padding: 5.3rem 10.2rem 8.7rem 10.2rem
+    @media ( max-width: $mobile )
+      padding: 2rem 1.6rem
+      margin: 2rem
+    background: var(--Dark2)
+    position: relative
+    z-index: 2
+    border-radius: 1rem
+    &-title
+      text-align: center
+      color: var(--White)
+      @media ( max-width: $mobile )
+        font-size: 2.4rem!important
+      b
+        background: var(--gr)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+    &-description
+      display: flex
+      justify-content: center
+      margin-top: 2.2rem
+      margin-bottom: 6.3rem
+      color: var(--White)
+      @media ( max-width: $mobile )
+        margin-top: .8rem
+        margin-bottom: 3rem
+        font-size: 1.4rem!important
+        text-align: center
+    form
+      text-align: center
+      .grid
+        display: grid
+        grid-template-columns: auto 1fr
+        grid-gap: 2.4rem
+        grid-auto-rows: auto
+        margin-top: 6.3rem
+        margin-bottom: 3.3rem
+        .space
+          height: 1.4rem
+        @media ( max-width: $mobile )
+          display: flex
+          flex-direction: column
+          .space
+            height: 1.4rem
+          textarea
+            height: 12.2rem
+      .btn
+        @media ( max-width: $mobile )
+          width: 100%
+
+  &__trigger
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    background: blue
+    background: rgba(0, 0, 0, 0.6)
+    backdrop-filter: blur(16px)
+
+  &__close
+    border: none
+    outline: none
+    cursor: pointer
+    background: transparent
+    position: absolute
+    top: 2.5rem
+    right: 2.5rem
+    @media ( max-width: $mobile )
+      transform: scale(.8)
+      top: 1.38rem
+      right: 1.38rem

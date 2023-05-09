@@ -7,6 +7,22 @@
   scroll-behavior: smooth;
 }
 
+:root {
+  --White: #ffffff;
+  --LinkIcon: #312E39;
+  --Card: #181620;
+  --Card2: #06001E;
+  --Dark: #13111A;
+  --Dark2: #191620;
+  --DarkGrey: #26242D;
+  --grey: #312D41;
+  --gr: linear-gradient(90deg, #4C62D7 0%, #AB30E4 100%);
+  --grOrange: linear-gradient(90deg, #EA5C2F 0%, #F3B921 100%);
+  --grPurper: linear-gradient(90deg, #DF2A2A 0%, #DF2AB7 100%);
+  --grGreen: linear-gradient(90deg, #24EB68 0%, #2DCF64 0.01%, #00C2CE 100%);
+  --iconHover: #453e64;
+}
+
 html {
   font-size: 10px;
 }

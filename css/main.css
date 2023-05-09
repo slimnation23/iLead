@@ -703,7 +703,7 @@ body {
 
 @media (max-width: 768px) {
   .video .wrapper {
-    width: 100vw;
+    /* width: 100vw; */
     overflow-x: scroll;
     padding-bottom: 3rem;
   }

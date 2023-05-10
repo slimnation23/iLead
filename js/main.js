@@ -1,6 +1,6 @@
 //Menu
 const menuBtn = document.querySelector('.menu-toggle')
-const navlist = document.querySelector('.header__brand-links')
+const navlist = document.querySelector('.nav__ul')
 
 menuBtn.onclick = () => {
     navlist.classList.toggle('active')

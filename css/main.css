@@ -31,6 +31,128 @@ body {
   }
 }
 
+header {
+  position: relative;
+  background: var(--DarkGrey);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 8%;
+  z-index: 2;
+}
+
+header .logo {
+  font-size: 22px;
+  transition: .5s;
+}
+
+header .logo:hover {
+  transform: scale(1.2);
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+header nav ul li {
+  position: relative;
+  float: left;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 5px;
+  color: var(--White);
+  font-size: 1.6rem;
+  text-decoration: none;
+  display: block;
+  font-family: 'Futura PT Cond';
+}
+
+header nav ul li span {
+  padding: 15px;
+  color: var(--White);
+  font-size: 1.6rem;
+  text-decoration: none;
+  display: block;
+  font-family: 'Futura PT Cond';
+  cursor: pointer;
+}
+
+header nav ul li a:hover {
+  opacity: .5;
+}
+
+header nav ul li span:hover {
+  opacity: .5;
+}
+
+header nav ul li ul li a:hover {
+  text-decoration: underline;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background: var(--DarkGrey);
+}
+
+nav ul li ul li {
+  width: 100%;
+}
+
+nav ul li ul li a {
+  font-size: 12px;
+}
+
+nav ul li:hover > ul {
+  display: initial;
+}
+
+@media (max-width: 997px) {
+  header nav ul li a {
+    font-size: 1.3rem;
+  }
+  header nav ul li span {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 880px) {
+  header nav ul li a {
+    font-size: 1rem;
+  }
+  header nav ul li span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header nav ul li a {
+    font-size: 1.6rem;
+  }
+  header nav ul li span {
+    font-size: 1.6em;
+  }
+  header {
+    padding: 10px 2.1rem;
+  }
+  header nav ul li a {
+    padding: 15px 0;
+  }
+  header nav ul li span {
+    padding: 15px 0;
+  }
+  nav ul li ul {
+    position: static;
+    width: auto;
+  }
+}
+
 .header {
   background: var(--DarkGrey);
   min-height: 8rem;
@@ -67,10 +189,26 @@ body {
 }
 
 .header__brand-links {
-  margin-left: 6rem;
+  margin-left: 2rem;
   display: flex;
   align-items: center;
   gap: 1.4rem;
+}
+
+.header__brand-links li {
+  height: 22px;
+  list-style: none;
+}
+
+.header__brand-links li ul {
+  display: none;
+}
+
+.header__brand-links li:hover ul {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid white;
 }
 
 .menu-toggle {
@@ -85,7 +223,7 @@ body {
     width: 100%;
     justify-content: space-between;
   }
-  .header__brand-links {
+  .nav__ul {
     flex-direction: column;
     align-items: flex-start;
     display: none;
@@ -98,7 +236,7 @@ body {
   .active {
     display: flex;
     position: absolute;
-    top: 65px;
+    top: 56px;
     left: 0;
     background-color: var(--DarkGrey);
     width: 100%;
@@ -188,7 +326,6 @@ body {
 .welcome__info-top p {
   color: var(--White);
   position: relative;
-  z-index: 2;
 }
 
 @media (max-width: 768px) {
@@ -1714,3 +1851,4 @@ footer {
 .d-flex img {
   align-self: center;
 }
+

@@ -280,7 +280,7 @@ body {
 }
 
 .achievements__blocks img {
-  max-width: 700px;
+  width: 720px;
 }
 
 .achievements__blocks p {
@@ -1687,6 +1687,8 @@ footer {
   color: var(--White);
   font-size: 2rem;
   padding: 2rem;
+  box-shadow: 0 0 5px var(--White);
+  position: relative;
 }
 
 .item__numbers-stars {

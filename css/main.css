@@ -133,6 +133,7 @@ body {
   display: flex;
   align-items: center;
   overflow: hidden;
+  padding-bottom: 40px;
 }
 
 .welcome__img {
@@ -150,7 +151,7 @@ body {
 }
 
 .welcome__info {
-  margin-top: 15rem;
+  margin-top: 12rem;
   margin-left: 12.3rem;
 }
 
@@ -207,7 +208,7 @@ body {
   display: block;
   color: var(--White);
   margin-top: 1.9rem;
-  margin-bottom: 5.3rem;
+  /* margin-bottom: 5.3rem; */
 }
 
 @media (max-width: 768px) {
@@ -232,6 +233,7 @@ body {
   background: var(--Dark2);
   position: relative;
   overflow: hidden;
+  padding: 25px 0;
 }
 
 .achievements__title {
@@ -252,14 +254,32 @@ body {
 }
 
 .achievements__blocks {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16.2rem, 28.2rem));
-  grid-auto-rows: minmax(16.3rem, auto);
-  grid-gap: 2.4rem;
+  display: flex;
   justify-content: center;
-  padding-top: 18.1rem;
-  padding-bottom: 8.8rem;
-  position: relative;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.achievements__blocks img {
+  max-width: 700px;
+}
+
+.achievements__blocks p {
+  color: var(--White);
+}
+
+.achievements__blocks ul li {
+  color: var(--White);
+  font-weight: 400;
+}
+
+.getOrder__info p {
+  color: var(--White);
+}
+.getOrder img {
+  max-width: 400px;
 }
 
 @media (max-width: 768px) {
@@ -268,6 +288,14 @@ body {
     padding-bottom: 3.8rem;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .achievements__blocks img {
+    width: 100%;
+  }
+  .getOrder img {
+    width: 100%;
   }
 }
 
@@ -319,7 +347,6 @@ body {
 }
 
 .jobs {
-  padding-top: 16.3rem;
   text-align: center;
 }
 
@@ -441,11 +468,16 @@ body {
 .jobs .getOrder {
   text-align: left;
   margin-top: 10rem;
-  margin-bottom: 17.7rem;
+  margin-bottom: 5rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   justify-content: space-between;
-  margin: 0 3rem;
+  align-items: center;
+}
+
+.getOrder__info ul li {
+  list-style-type: decimal;
+  color: var(--White);
 }
 
 @media (max-width: 768px) {
@@ -541,6 +573,12 @@ body {
   background-image: url(../assets/bg2.png);
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: 'Futura PT Cond'
+}
+
+.task p {
+  color: var(--White);
+  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
@@ -554,7 +592,7 @@ body {
 .task .blocks {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   grid-gap: 2.4rem;
   margin-top: 6.6rem;
 }
@@ -567,15 +605,20 @@ body {
 }
 
 .task .blocks .block {
-  width: 38.4rem;
-  height: 9.1rem;
+  max-width: 250px;
   color: var(--White);
   background: var(--grey);
   border-radius: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem 2.6rem 2.3rem 2.6rem;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.task .blocks .block img {
+  width: 100%;
+  border-radius: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -1226,6 +1269,7 @@ body {
   text-decoration: none;
   color: var(--White);
   font-size: 1.6rem;
+  font-family: 'Futura PT Cond';
 }
 
 .icon-link:hover {
@@ -1597,4 +1641,28 @@ body {
     top: 1.38rem;
     right: 1.38rem;
   }
+}
+
+.mb-2 {
+  margin-bottom: 20px;
+}
+
+.mt-2 {
+  margin-top: 20px;
+}
+
+.align-self_left {
+  align-self: flex-start;
+}
+
+.text-aligh_left {
+  text-align: left;
+}
+
+footer {
+  background: var(--Dark2);
+  text-align: center;
+  color: var(--White);
+  font-size: 2rem;
+  padding: 2rem;
 }

@@ -51,9 +51,8 @@ body {
   align-items: center;
 }
 
-.header__brand-logo {
-  width: 11.7rem;
-  height: 5.1rem;
+.header__brand a {
+  text-decoration: none;
 }
 
 .header__brand-sleng {
@@ -137,7 +136,7 @@ body {
 }
 
 .welcome__img {
-  margin-left: -17rem;
+  margin-top: 50px;
 }
 
 @media (max-width: 768px) {

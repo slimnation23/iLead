@@ -505,6 +505,11 @@ body {
   color: var(--White);
 }
 
+.achievements__blocks__ul li {
+  list-style-type: decimal;
+  color: var(--White);
+}
+
 @media (max-width: 768px) {
   .jobs .getOrder {
     display: flex;

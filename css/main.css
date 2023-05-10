@@ -701,9 +701,6 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  /* grid-template-columns: repeat(auto-fill, minmax(38.4rem, 1fr)); */
-  /* grid-auto-rows: minmax(37.1rem, auto);
-  grid-gap: 2.4rem; */
   margin-top: 7.7rem;
 }
 

@@ -262,6 +262,24 @@ body {
   margin-right: 15%;
 }
 
+.achievements__blocks p b {
+  background: var(--gr);
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.jobs p b {
+  background: var(--gr);
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.task p b {
+  background: var(--gr);
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .achievements__blocks img {
   max-width: 700px;
 }

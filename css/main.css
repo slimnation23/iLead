@@ -378,9 +378,8 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  /* grid-template-columns: repeat(auto-fill, minmax(38.4rem, 1fr)); */
-  /* grid-auto-rows: minmax(54.2rem, auto);
-  grid-gap: 2.4rem; */
+  flex-direction: column;
+  align-items: center;
   margin-top: 7.1rem;
 }
 
@@ -394,9 +393,13 @@ body {
 }
 
 .jobs .items .item {
+  display: flex;
+  align-items: center;
   background: var(--Card);
   border-radius: 1rem;
   width: 80%;
+  padding: 15px;
+  margin-bottom: 25px;
 }
 
 .jobs .items .item__body {
@@ -407,11 +410,15 @@ body {
   .jobs .items .item__body {
     padding: 2rem;
   }
+  .jobs .items .item {
+    flex-direction: column;
+  }
 }
 
 .jobs .items .item__img {
-  width: 100%;
-  height: auto;
+  width: 250px;
+  height: 150px;
+  border-radius: 1rem;
 }
 
 .jobs .items .item__numbers {
@@ -1683,4 +1690,14 @@ footer {
   color: var(--White);
   font-size: 2rem;
   padding: 2rem;
+}
+
+.item__numbers-stars {
+  display: flex;
+  padding-top: 10px;
+}
+
+.item__numbers-stars i {
+ color: rgba(255, 255, 0, 0.815);
+ margin-left: 5px;
 }

@@ -1700,3 +1700,12 @@ footer {
  color: rgba(255, 255, 0, 0.815);
  margin-left: 5px;
 }
+
+.d-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.d-flex img {
+  align-self: center;
+}

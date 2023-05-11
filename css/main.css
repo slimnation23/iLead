@@ -1836,6 +1836,18 @@ header select {
   }
 }
 
+.ul__img {
+  text-align: center;
+}
+
+.ul__img li {
+  text-align: left;
+}
+
+.ul__img p {
+  text-align: left;
+}
+
 .mb-2 {
   margin-bottom: 30px;
 }

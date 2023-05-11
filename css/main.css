@@ -218,6 +218,35 @@ nav ul li:hover > ul {
   display: none;
 }
 
+header select {
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: none;
+  background-color: var(--DarkGrey);
+  color: var(--White);
+  flex: 1;
+  padding: 0.5em;
+  cursor: pointer;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  width: 4em;
+  height: 3em;
+  line-height: 3;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid var(--White);
+}
+
+.select:hover {
+  border: none;
+}
+
 @media (max-width: 768px) {
   .header__brand {
     width: 100%;
@@ -438,7 +467,7 @@ nav ul li:hover > ul {
 
 @media (max-width: 768px) {
   .achievements__blocks {
-    padding-top: 5.7rem;
+    /* padding-top: 5.7rem; */
     padding-bottom: 3.8rem;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
@@ -637,7 +666,7 @@ nav ul li:hover > ul {
   align-items: center;
 }
 
-.getOrder__info ul li {
+.ul__num {
   list-style-type: decimal;
   color: var(--White);
 }

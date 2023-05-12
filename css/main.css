@@ -1588,7 +1588,7 @@ header select {
 }
 
 .btn-fill {
-  padding: 1.8rem 3.8rem 1.8rem 3.8rem;
+  padding: 1.8rem;
   background-color: rgb(56, 157, 41);
   border-radius: 1.2rem;
   color: var(--White);

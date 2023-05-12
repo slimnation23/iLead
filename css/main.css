@@ -37,7 +37,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 8%;
+  padding: 0 8%;
   z-index: 2;
 }
 
@@ -97,8 +97,12 @@ nav ul li ul {
   display: none;
   position: absolute;
   left: 0;
-  width: 200px;
+  width: 100%;
   background: var(--DarkGrey);
+}
+
+.ul__lang {
+  text-align: center;
 }
 
 nav ul li ul li {
@@ -150,6 +154,9 @@ nav ul li:hover > ul {
   nav ul li ul {
     position: static;
     width: auto;
+  }
+  .ul__lang {
+    text-align: left;
   }
 }
 
@@ -252,7 +259,7 @@ header select {
     width: 100%;
     justify-content: space-between;
   }
-  .nav__ul {
+  .nav__ul, .nav__lang {
     flex-direction: column;
     align-items: flex-start;
     display: none;
@@ -1893,26 +1900,6 @@ footer {
   align-self: center;
 }
 
-.select-btn {
-  height: 65px;
-  font-size: 1.6rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 20px;
-  border-radius: 5px;
-  border: 1px solid var(--White);
-  background-color: var(--DarkGrey);
-  color: var(--White);
-  cursor: pointer;
-}
 
-.lang-content {
-  padding: 20px;
-  margin-top: 15px;
-  border-radius: 5px;
-  background-color: var(--DarkGrey);
-  color: var(--White);
-  border: 1px solid var(--White);
-}
+
 

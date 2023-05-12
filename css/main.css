@@ -155,6 +155,9 @@ nav ul li:hover > ul {
     position: static;
     width: auto;
   }
+  .ul__lang {
+    text-align: left;
+  }
 }
 
 .header {

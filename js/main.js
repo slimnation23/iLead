@@ -6,6 +6,7 @@ menuBtn.onclick = () => {
     navlist.classList.toggle('active')
 }
 
+// Parallax
 let parallax = document.querySelectorAll('.parallax')
 const force = 20
 
@@ -21,22 +22,3 @@ for (let i = 0; i < parallax.length; i++) {
     })
 }
 
-function dropdown(e) {
-    const el = e.parentElement.children[2]
-
-    el.classList.toggle('show')
-}
-
-function select(e, a) {
-    e.parentElement.parentElement.children[0].children[0].children[0].setAttribute(
-        'src',
-        `./assets/icons/${a}.svg`
-    )
-}
-
-function openModal(id) {
-    document.querySelector(`#${id}`).classList.add('show')
-}
-function closeModal(e) {
-    e.parentElement.parentElement.classList.remove('show')
-}

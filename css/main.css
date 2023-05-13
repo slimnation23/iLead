@@ -47,7 +47,7 @@ header .logo {
 }
 
 header .logo:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 header nav ul {
@@ -98,6 +98,8 @@ nav ul li ul {
   position: absolute;
   left: 0;
   width: 100%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   background: var(--DarkGrey);
 }
 
@@ -1900,6 +1902,9 @@ footer {
   align-self: center;
 }
 
-
+.ul__lang img {
+  width: 30px;
+  height: 20px;
+}
 
 

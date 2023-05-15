@@ -471,6 +471,7 @@ header select {
 }
 .getOrder img {
   max-width: 400px;
+  border-radius: 5px;
 }
 
 @media (max-width: 768px) {
@@ -666,7 +667,7 @@ header select {
 
 .jobs .getOrder {
   text-align: left;
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
   margin-bottom: 5rem;
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -695,6 +696,7 @@ header select {
 
 .jobs .getOrder__info {
   margin-top: 6rem;
+  margin-right: 50px;
 }
 
 /* @media (max-width: 768px) {
@@ -713,6 +715,9 @@ header select {
   .jobs .getOrder__info-title {
     font-size: 3rem;
     text-align: center;
+  }
+  .jobs .getOrder__info {
+    margin-right: 0;
   }
 }
 
@@ -1882,6 +1887,10 @@ footer {
   position: relative;
 }
 
+footer p {
+  font-size: 1.6rem;
+}
+
 .item__numbers-stars {
   display: flex;
   padding-top: 10px;
@@ -1906,4 +1915,70 @@ footer {
   height: 20px;
 }
 
+.table-responsive {
+  min-height: .01%;
+  border-radius: 15px;
+  overflow-x: auto;
+  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.9);
+  margin-bottom: 20px;
+}
 
+.table-responsive table {
+  border-width: 0px;
+  border-collapse: collapse;
+  transition: 0.2s;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 100%;
+  font-size: 1.6rem;
+}
+
+.table-responsive table tr {
+  background-color: #ffffff;
+}
+
+@media (max-width: 992px) {
+  tr {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  td {
+    width: 48%;
+}
+}
+
+.table-responsive table > tbody > tr:nth-of-type(even) {
+  background: #f6f6f6;
+}
+
+.table-responsive table td, table th {
+  text-align: left;
+  border-width: 0px;
+  padding: 25px 25px 25px 25px;
+  border-style: solid;
+  border-color: #dcdcdc;
+  width: auto;
+  max-width: none;
+}
+
+.table-responsive table td:nth-child(2), .table-responsive table th:nth-child(2) {
+  text-align: left;
+  border-left: 1px #e4e4e4 solid;
+  padding: 25px 25px 25px 25px;
+}
+
+@media (max-width: 560px) {
+  .table-responsive table td:nth-child(2), .table-responsive table th:nth-child(2) {
+      border-left: 0px;
+      min-width: auto;
+      max-width: 100%;
+      padding-top: 0px;
+      width: 100%;
+  }
+}
+
+.table-responsive table td p {
+  color: var(--Dark);
+}

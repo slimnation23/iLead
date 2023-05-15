@@ -543,11 +543,6 @@ header select {
   margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
-  .jobs {
-    padding-top: 5.9rem;
-  }
-}
 
 .jobs .items {
   display: flex;
@@ -689,7 +684,6 @@ header select {
   .jobs .getOrder {
     display: flex;
     flex-direction: column;
-    margin-top: 6.5rem;
     margin-bottom: 8.6rem;
   }
 }
@@ -697,6 +691,7 @@ header select {
 .jobs .getOrder__info {
   margin-top: 6rem;
   margin-right: 50px;
+  margin-bottom: 25px;
 }
 
 /* @media (max-width: 768px) {

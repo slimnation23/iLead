@@ -716,6 +716,9 @@ header select {
     font-size: 3rem;
     text-align: center;
   }
+  .jobs .getOrder__info {
+    margin-right: 0;
+  }
 }
 
 .jobs .getOrder__info-title b {
@@ -1914,6 +1917,7 @@ footer p {
 
 .table-responsive {
   min-height: .01%;
+  border-radius: 15px;
   overflow-x: auto;
   -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.9);
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.9);

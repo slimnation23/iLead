@@ -698,11 +698,11 @@ header select {
   margin-top: 6rem;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .jobs .getOrder__info {
     text-align: center;
   }
-}
+} */
 
 .jobs .getOrder__info-title {
   color: var(--White);

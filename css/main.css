@@ -318,8 +318,7 @@ header select {
 @media (max-width: 768px) {
   .welcome__img {
     margin-left: 0;
-    width: 22.5rem;
-    height: 27.7rem;
+    width: 100%;
     margin: 0 auto;
     margin-top: 1.4rem;
   }
@@ -698,11 +697,11 @@ header select {
   margin-top: 6rem;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .jobs .getOrder__info {
     text-align: center;
   }
-}
+} */
 
 .jobs .getOrder__info-title {
   color: var(--White);

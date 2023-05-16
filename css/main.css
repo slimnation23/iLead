@@ -138,6 +138,10 @@ nav ul li:hover > ul {
 }
 
 @media (max-width: 768px) {
+  header {
+    justify-content: space-around;
+  }
+
   header nav ul li a {
     font-size: 1.6rem;
   }

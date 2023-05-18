@@ -367,6 +367,7 @@ header select {
 .welcome__info-top p {
   color: var(--White);
   position: relative;
+  margin-top: 20px;
 }
 
 @media (max-width: 768px) {

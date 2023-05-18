@@ -367,6 +367,7 @@ header select {
 .welcome__info-top p {
   color: var(--White);
   position: relative;
+  margin-top: 20px;
 }
 
 @media (max-width: 768px) {
@@ -475,6 +476,7 @@ header select {
 }
 .getOrder img {
   max-width: 400px;
+  border-radius: 5px;
   border-radius: 5px;
 }
 

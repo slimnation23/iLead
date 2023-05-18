@@ -476,6 +476,7 @@ header select {
 .getOrder img {
   max-width: 400px;
   border-radius: 5px;
+  border-radius: 5px;
 }
 
 @media (max-width: 768px) {

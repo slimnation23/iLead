@@ -316,7 +316,7 @@ header select {
 }
 
 .welcome__img {
-  margin-top: 50px;
+  margin-top: 15rem;
 }
 
 @media (max-width: 768px) {
@@ -1913,7 +1913,7 @@ footer p {
 
 .ul__lang img {
   width: 30px;
-  height: 20px;
+  /* height: 20px; */
 }
 
 .table-responsive {
